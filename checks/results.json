@@ -1,0 +1,30 @@
+[
+  {
+    "width": 1440,
+    "images": 6,
+    "overflow": false,
+    "navigation": "passed",
+    "errors": []
+  },
+  {
+    "width": 768,
+    "images": 6,
+    "overflow": false,
+    "navigation": "passed",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "images": 6,
+    "overflow": false,
+    "navigation": "passed",
+    "errors": []
+  },
+  {
+    "width": 320,
+    "images": 6,
+    "overflow": false,
+    "navigation": "passed",
+    "errors": []
+  }
+]
