@@ -6,7 +6,7 @@
 
 - `index.html` - Вся разметка страницы (header, hero, секции 01-06: о себе, компетенции, проекты, опыт, профиль, контакты)
 - `styles.css` - Все стили. Цвета и шрифты взяты из Figma-макета
-- `assets/` - Изображения: `hero.png` и `project-1.png` ... `project-5.png`
+- `assets/` - Изображения: `hero.png`, `project-1.png`, `project-2.png`
 - `.gitignore` - Игнорирование мусорных файлов
 
 ## Styling
