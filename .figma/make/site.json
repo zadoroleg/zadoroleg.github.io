@@ -1,0 +1,10 @@
+{
+  "description": "This web application allows users to create pixel-perfect replicas of websites, ensuring precise design and layout for developers and designers.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
