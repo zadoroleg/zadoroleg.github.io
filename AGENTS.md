@@ -1,41 +1,23 @@
-# figma-make-app
+# zadoroleg.github.io
 
-React + Vite + Tailwind CSS project running inside Figma Make.
-
-## Development Server
-
-A Vite development server is **already running** on `$PORT` (default 8443). You don't need to start it manually.
-
-- Preview URL: The user can access the running app through the preview panel
-- Hot reload: Changes to source files are reflected immediately
+Статический персональный сайт-портфолио Олега Задорожного (Creative Digital Producer). Хостится на GitHub Pages.
 
 ## Project Structure
 
-This is the canonical project structure. Start with task-relevant files below. Only follow imports or inspect other files when required, when a documented path is missing, or when the repository contradicts this guide.
-
-- `src/main.tsx` - React entrypoint; imports `src/index.css` and mounts `src/App.tsx` into the `#root` element
-- `src/App.tsx` - Primary application component and the usual starting point for UI work
-- `src/index.css` - Global CSS entrypoint and Tailwind CSS v4 import
-- `index.html` - Vite HTML shell containing the `#root` element and loading `src/main.tsx`
-- `package.json` - Project dependencies and the Vite build, development, preview, and formatting scripts
-- `vite.config.ts` - Vite configuration with React, Tailwind CSS v4, and Figma Make plugins plus the `@` alias for `src`
-- `.mise.toml` - Toolchain versions for Node.js and pnpm
-
-## Dependencies
-
-- Runtime: React 19 and React DOM 19
-- Styling: Tailwind CSS v4 with the `@tailwindcss/vite` plugin
-- Build tooling: Vite 8, TypeScript 5.7, and `@vitejs/plugin-react`
-- Formatting: oxfmt
+- `index.html` - Вся разметка страницы (header, hero, секции 01-06: о себе, компетенции, проекты, опыт, профиль, контакты)
+- `styles.css` - Все стили. Цвета и шрифты взяты из Figma-макета
+- `assets/` - Изображения: `hero.png` и `project-1.png` ... `project-5.png`
+- `.gitignore` - Игнорирование мусорных файлов
 
 ## Styling
 
-This project uses **Tailwind CSS v4** through the `@tailwindcss/vite` plugin configured in `vite.config.ts`. `src/index.css` imports Tailwind with `@import 'tailwindcss';`. Use Tailwind utility classes directly in JSX and put global CSS or Tailwind v4 theme customization in `src/index.css`. This scaffold does not need a Tailwind config file or PostCSS config.
+- Шрифт: Inter (Google Fonts, подключается в `index.html`)
+- Цвета: фон `#f5f5f3`, текст `#1b1b1b`, вторичный `#666`, акцент `#cfff00`
+- Контейнер: `max-width: 1920px`, паддинги 20/40/80px
+- Брейкпоинты: 640px (sm), 768px (md), 1024px (lg), 1280px (xl) — соответствуют Tailwind default
+- Мобильное меню (<640px): полноэкранный оверлей, checkbox-hack (`#menu-toggle`), закрытие по клику на ссылку — мини-скрипт в `index.html`
+- `main.container` — flex-col с gap; `.section` — с бордером сверху (`1px`, `rgba(27,27,27,0.15)`)
 
-`src/main.tsx` imports `src/index.css`, so global font wiring belongs in `src/index.css`. Keep CSS `@import` statements first, then add any `@font-face` rules and font-family defaults there.
+## Публикация
 
-## Code quality
-
-- Use double quotes for strings containing apostrophes (`"We're here to help"`), or escape them in single-quoted strings. An unescaped apostrophe in a single-quoted string breaks the build.
-- Ensure JSX tags are closed and braces are balanced.
-- Export components as default exports.
+Сайт статический: правки в `index.html`/`styles.css`/`assets/` применяются сразу на сайте GitHub Pages после коммита и пуша в `main`.

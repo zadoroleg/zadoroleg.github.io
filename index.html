@@ -1,16 +1,347 @@
 <!doctype html>
-<html lang="<!-- figma:lang -->">
+<html lang="ru">
   <head>
-    <!-- figma:head-start -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><!-- figma:title --></title>
-    <!-- figma:head-end -->
+    <meta
+      name="description"
+      content="Олег Задорожный — креативный диджитал-продюсер. Интерактивные веб-проекты: игровые механики, 3D, AI и нестандартный digital production."
+    />
+    <title>Олег Задорожный — Creative Digital Producer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <!-- figma:body-start -->
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <!-- figma:body-end -->
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true" />
+      <label for="menu-toggle" class="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#projects">Проекты</a>
+        <a href="#experience">Опыт</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <span class="header-label">Creative Digital Producer / 2026</span>
+    </header>
+
+    <main class="container">
+      <!-- ===== HERO ===== -->
+      <section class="hero">
+        <div class="hero-left">
+          <h1>
+            <span>ОЛЕГ</span>
+            <span>ЗАДОРОЖНЫЙ</span>
+          </h1>
+
+          <div class="tags">
+            <span class="tag active">спецпроекты</span>
+            <span class="tag">Интерактив и 3D</span>
+            <span class="tag">AI генерации</span>
+            <span class="tag">управление производством</span>
+          </div>
+
+          <div class="hero-photo-mobile">
+            <img src="assets/hero.png" alt="Олег Задорожный" />
+          </div>
+
+          <div class="hero-intro">
+            <h2>Креативный диджитал-продюсер</h2>
+            <p>
+              Продюсирую интерактивные веб-проекты на стыке креатива и технологий: игровые механики, 3D,
+              AI и нестандартный digital production. От идеи и бюджета до команды, технической реализации и запуска.
+            </p>
+            <a class="cta" href="https://t.me/olegcastom" target="_blank" rel="noopener noreferrer">
+              Написать
+              <svg width="28" height="28" fill="none" viewBox="0 0 28.72 28.72" aria-hidden="true">
+                <path
+                  d="M20.346 20.346V8.37935H8.37935M20.346 8.37935L8.37935 20.346"
+                  stroke="#1B1B1B"
+                  stroke-linecap="round"
+                  stroke-width="3.5"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <img src="assets/hero.png" alt="Олег Задорожный" />
+        </div>
+      </section>
+
+      <!-- ===== 01 / ABOUT ===== -->
+      <section class="section">
+        <p class="section-num">01 / Веду проекты от идеи до запуска</p>
+        <div class="about-text">
+          <p>
+            Веду переговоры, документацию и составляю бюджет, отбираю проектные команды, курирую работу
+            команды, концепт, дизайн, разработку, 3D и контент.
+          </p>
+          <p>
+            Технический бэкграунд позволяет быстро оценить реализуемость идеи, сложность и стоимость,
+            гарантируя запуск с соответствием высоким планкам качества.
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== 02 / КОМПЕТЕНЦИИ ===== -->
+      <section class="section">
+        <p class="section-num">02 / Компетенции</p>
+        <div class="cols3">
+          <div class="comp-col">
+            <h3>Концепция и сценарий</h3>
+            <p>Исследую задачу, формирую сценарий, механику и визуальное направление.</p>
+          </div>
+          <div class="comp-col">
+            <h3>Продюсирование</h3>
+            <p>Веду переговоры и бюджет, подбираю подрядчиков, ставлю задачи и координирую производство.</p>
+          </div>
+          <div class="comp-col">
+            <h3>Техническая база</h3>
+            <p>Понимаю дизайн, веб-разработку, 3D, знаю особенности интеграций от прототипа до запуска.</p>
+          </div>
+        </div>
+
+        <div class="partners">
+          <p class="section-num">Работал с командами</p>
+          <div class="partners-marquee">
+            <span>Independent Media</span>
+            <span>Nectarin</span>
+            <span>E-Promo</span>
+            <span>Narrators</span>
+            <span>СОЛЬ</span>
+            <span>AGIMA</span>
+            <span>Digital Lab</span>
+            <span>adgasm</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 03 / ПРОЕКТЫ ===== -->
+      <section class="section" id="projects">
+        <p class="section-num">03 / Избранные проекты</p>
+
+        <article class="project">
+          <div class="project-row">
+            <div class="project-num">01</div>
+            <div class="project-info">
+              <h3>
+                <a href="https://autovibes.mentoday.ru/?utm_source=mentoday&utm_medium=banner&utm_campaign=special&utm_content=click&utm_term=click" target="_blank" rel="noopener noreferrer">ТЫ - МАШИНА ↗</a>
+              </h3>
+              <div class="project-tags">
+                <span>3D</span><span>AI</span><span>ПЕРСОНАЛИЗАЦИЯ</span>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p>
+                Интерактив с персональным результатом для Auto.ru. Пользователь проходит сценарий выбора и
+                получает персональную AI-карточку автомобиля, дополненную 3D-анимацией.
+              </p>
+              <div class="project-meta">
+                <div><span>Моя роль</span><strong>Продюсирование UX/UI / 3D</strong></div>
+                <div><span>Формат</span><strong>Интерактивный квиз</strong></div>
+              </div>
+            </div>
+            <div class="project-thumb">
+              <img src="assets/project-1.png" alt="ТЫ - МАШИНА" class="object-bottom" />
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-row">
+            <div class="project-num">02</div>
+            <div class="project-info">
+              <h3>
+                <a href="https://quantguesser.techinsider.ru/" target="_blank" rel="noopener noreferrer">КВАНТОВЫЙ ПРЕДСКАЗАТЕЛЬ КАРЬЕРЫ ↗</a>
+              </h3>
+              <div class="project-tags">
+                <span>интерактив</span><span>WEB</span><span>3D</span>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p>
+                Игровой инструмент с 3D-механиками для hh.ru с элементами гейминга, формирующими уникальный
+                образ будущего карьеры пользователя.
+              </p>
+              <div class="project-meta">
+                <div><span>Моя роль</span><strong>Продюсирование UX/UI / 3D / VFX</strong></div>
+                <div><span>Формат</span><strong>Интерактивный тест-предсказатель</strong></div>
+              </div>
+            </div>
+            <div class="project-thumb">
+              <img src="assets/project-2.png" alt="Квантовый предсказатель карьеры" />
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-row">
+            <div class="project-num">03</div>
+            <div class="project-info">
+              <h3>
+                <a href="https://www.techinsider.ru/science/1686445-gigaspace/" target="_blank" rel="noopener noreferrer">СОЗДАЁМ КОСМОС ВМЕСТЕ С GIGACHAT ↗</a>
+              </h3>
+              <div class="project-tags">
+                <span>интерактив</span><span>AI</span>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p>
+                Продюсирую спецпроект от лица СБЕРА С GigaChat GT на тему: Россия создаёт свой космос. В
+                основе интерактив где каждый пользователь задаёт вопрос нейросети.
+              </p>
+              <div class="project-meta">
+                <div><span>Моя роль</span><strong>Продюсирование проекта</strong></div>
+                <div><span>Формат</span><strong>Интерактив нейро-опрос</strong></div>
+              </div>
+            </div>
+            <div class="project-thumb">
+              <img src="assets/project-3.png" alt="Создаём космос вместе с GigaChat" />
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-row">
+            <div class="project-num">04</div>
+            <div class="project-info">
+              <h3>
+                <a href="https://greenstories.team/?utm_source=thevoicemag&utm_medium=banner&utm_campaign=zercalodushi&utm_term=feature" target="_blank" rel="noopener noreferrer">СБЕР ИСТОРИИ ↗</a>
+              </h3>
+              <div class="project-tags">
+                <span>WEB</span><span>AI</span>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p>
+                Серия и спецпроекты материалов о людях и делах, сделанных с Сбером. Даём платформу лучшим
+                историям предпринимательства.
+              </p>
+              <div class="project-meta">
+                <div><span>Моя роль</span><strong>Продюсирование UX/UI / 3D / AI</strong></div>
+                <div><span>Формат</span><strong>Интерактивная публикация</strong></div>
+              </div>
+            </div>
+            <div class="project-thumb">
+              <img src="assets/project-4.png" alt="Сбер истории" />
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-row">
+            <div class="project-num">05</div>
+            <div class="project-info">
+              <h3>
+                <a href="https://www.techinsider.ru/digital-space-2030/" target="_blank" rel="noopener noreferrer">СБЕР «НАУЧНАЯ ПРЕМИЯ» ↗</a>
+              </h3>
+              <div class="project-tags">
+                <span>GAME</span><span>WEB</span><span>3D</span>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p>Игровой спецпроект о сезоне КХЛ с геймификацией.</p>
+              <div class="project-meta">
+                <div><span>Моя роль</span><strong>Продюсирование UX/UI / DEV/ AUDIO</strong></div>
+                <div><span>Формат</span><strong>Спецпроект</strong></div>
+              </div>
+            </div>
+            <div class="project-thumb">
+              <img src="assets/project-5.png" alt="Сбер «Научная премия»" />
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ===== 04 / ОПЫТ ===== -->
+      <section class="section" id="experience">
+        <p class="section-num">04 / Опыт</p>
+        <div class="cols3">
+          <div class="exp-col">
+            <span class="exp-period">2021 — СЕЙЧАС</span>
+            <h3>Creative Digital Producer</h3>
+            <p>Интерактивные веб-проекты для брендов и медиа: переговоры, бюджет, команды, курирование и организация производства.</p>
+          </div>
+          <div class="exp-col">
+            <span class="exp-period">2019 — 2021</span>
+            <h3>Content Producer — Audio-Reclama.ru</h3>
+            <p>Управление производством аудио- и видеоконтента: от сценария до постпродакшна.</p>
+          </div>
+          <div class="exp-col">
+            <span class="exp-period">2015 — 2019</span>
+            <h3>Production background</h3>
+            <p>Звуковой продакшн, запись звука и мультимедийный контент.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 05 / ПРОФИЛЬ ===== -->
+      <section class="section">
+        <p class="section-num">05 / Профиль</p>
+        <div class="cols3">
+          <div class="prof-col">
+            <h3>Инструменты</h3>
+            <p>WebGL / 3D / Adobe Pack CC /<br />Dev / AI контент</p>
+          </div>
+          <div class="prof-col">
+            <h3>Языки</h3>
+            <p>Английский — B2<br />Греческий — B1</p>
+          </div>
+          <div class="prof-col">
+            <h3>Образование</h3>
+            <p>ННГУ им. Н. И. Лобачевского, 2015.<br />Специализация: Государственное и муниципальное управление</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 06 / КОНТАКТЫ ===== -->
+      <section class="section" id="contacts">
+        <p class="section-num">06 / Контакты</p>
+
+        <div class="contact-layout">
+          <h2 class="contact-heading">
+            <span>Открыт к роли</span><br />
+            <span>креативного</span><br />
+            <span>диджитал-продюсера.</span>
+          </h2>
+
+          <div class="contact-grid">
+            <div class="contact-item">
+              <span class="contact-label">Telegram</span>
+              <a href="https://t.me/olegcastom" target="_blank" rel="noopener noreferrer">@olegcastom</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <a href="mailto:olegcastom@gmail.com">olegcastom@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Телефон</span>
+              <a href="tel:+79101450640">+7 (910) 145-06-40</a>
+            </div>
+            <div class="contact-item contact-item-vimeo">
+              <a href="https://vimeo.com/zadoroleg" target="_blank" rel="noopener noreferrer">Vimeo ↗</a>
+              <a href="https://vk.ru/zadoroleg" target="_blank" rel="noopener noreferrer">VK ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      var toggle = document.getElementById('menu-toggle');
+      document.querySelectorAll('.nav a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          toggle.checked = false;
+        });
+      });
+    </script>
   </body>
 </html>
