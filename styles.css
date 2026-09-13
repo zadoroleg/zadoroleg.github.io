@@ -392,11 +392,19 @@ img {
   overflow: hidden;
   border-radius: 8px;
 }
+.project-thumb a {
+  display: block;
+}
 .project-thumb img {
   width: 100%;
   height: auto;
   aspect-ratio: 1 / 0.649;
   object-fit: cover;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+.project-thumb:hover img {
+  transform: scale(1.06);
 }
 .project-thumb img.object-bottom {
   object-position: bottom;
